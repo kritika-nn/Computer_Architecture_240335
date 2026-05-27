@@ -4,6 +4,7 @@ VHDL Code for Realizing Logic Gates
 Objective
 
 • To write VHDL code for basic logic gates: AND, OR, NOT, NAND, NOR, XOR, and XNOR.
+
  • To simulate each gate and verify its truth table using GTKWave.
 
 Theory
