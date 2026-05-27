@@ -2,9 +2,12 @@ Lab 2:
 
 VHDL Code for Realizing Logic Gates
 Objective
-• To write VHDL code for basic logic gates: AND, OR, NOT, NAND, NOR, XOR, and XNOR. • To simulate each gate and verify its truth table using GTKWave.
+
+• To write VHDL code for basic logic gates: AND, OR, NOT, NAND, NOR, XOR, and XNOR.
+ • To simulate each gate and verify its truth table using GTKWave.
 
 Theory
+
 Logic gates are the fundamental building blocks of all digital circuits. Each gate performs a basic Boolean operation on one or more binary inputs to produce a single binary output.
 
 Gate VHDL Operator Boolean Expression
