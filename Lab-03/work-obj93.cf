@@ -1,0 +1,13 @@
+v 4
+file . "decoder_tb.vhd" "4060498ae6d6b657d6d876538b7078549ea7a29c" "20260603011843.723":
+  entity decoder_tb at 1( 0) + 0 on 17;
+  architecture simulation of decoder_tb at 7( 95) + 0 on 18;
+file . "encoder_tb.vhd" "82a1c3ce76fdae0cea58cd60bdb4816f3674c6ed" "20260603011348.515":
+  entity encoder_tb at 1( 0) + 0 on 13;
+  architecture simulation of encoder_tb at 7( 95) + 0 on 14;
+file . "encoder_4to2.vhd" "c39a8b7d753c878aae3eb0d6bed773379493d303" "20260603011324.326":
+  entity encoder_4to2 at 1( 0) + 0 on 11;
+  architecture behavioral of encoder_4to2 at 12( 225) + 0 on 12;
+file . "decoder_2to4.vhd" "f51c989b67438f3affd42b232f0070eeeeff038a" "20260603011837.971":
+  entity decoder_2to4 at 1( 0) + 0 on 15;
+  architecture behavioral of decoder_2to4 at 12( 219) + 0 on 16;
