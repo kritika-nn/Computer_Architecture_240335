@@ -4,12 +4,13 @@
       To design and simulate a 1-to-4 Demultiplexer (DEMUX) in VHDL.
   ## Theory
 #    Multiplexer (MUX)
-     A multiplexer selects one of 2n input data 
+     A multiplexer selects one of 2^n input data 
      lines and routes it to a single output based on 
      n  select lines. A 4-to-1 MUX has 4 data inputs
       (D0–D3), 2 select lines (S1S0), and 1 output 
       (Y).
-    | s1 |  s2|  Output(Y)|
+
+    | S1 |  S2|  Output(y)|
     |----|----|-----------|
     | 0  |  0 |      D0   |
     | 0  |  1 |      D1   |
@@ -25,12 +26,12 @@
 n select lines. A 1-to-4 DEMUX has 1 data input (D),
  2 select lines (S1,S0), and 4 outputs (Y0–Y3). 
   
-  | S1 |  S0   | Output (y)|
-  |----|-------|-----------|
-  | 0  |  0    | Yo=D      |
-  | 0  |  1    | Y1=D      |
-  | 1  |  0    | Y2=D      |
-  | 1  |  1    | Y3=D      |
+  | S1 |  S0   | Active output|
+  |----|-------|--------------|
+  | 0  |  0    | Yo=D         |
+  | 0  |  1    | Y1=D         |
+  | 1  |  0    | Y2=D         |
+  | 1  |  1    | Y3=D         |
   
 
  ### Output 
