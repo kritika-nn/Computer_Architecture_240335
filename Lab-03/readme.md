@@ -23,6 +23,7 @@ A decoder converts an n-bit binary input into one of 2n output lines. A 2-to-4 d
 ### 0 1 0 0 1 0
 ### 1 0 0 1 0 0
 ### 1 1 1 0 0 0
+
 ## Outputs
 ### Decoder
 ![alt text](image-3.png)
