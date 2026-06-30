@@ -23,4 +23,12 @@
 
     ## Discussion and conclusion
 
-     # Here, by the waveform we verify that a comparator has place for 2 input and 3 output lines, the comparator is a device that compares the two inputs and gives an output as high in one of the 3 output lines. The two inputs A and B determine the output eq, lt and gt, eq = 1 when A=B, gt = 1 when A > B and lt = 1 when A < B.
+     # Here, by the waveform we verify that a 
+    comparator has place for 2 input and 3 output 
+    lines, the comparator is a device that compares 
+    the two inputs and gives an output as high in 
+    one of the 3 output lines. The two inputs A and 
+    B determine the output eq, lt and gt, eq = 1 
+    when A=B, gt = 1 when A > B and lt = 1 when A < 
+    B.
+    
