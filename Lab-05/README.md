@@ -17,9 +17,8 @@
     GT = A1B1'+A1⊕'B1⋅A0B0'
     LT= A1'B1 + A1⊕'B1⋅A0'B0
 
-  ##  Output 
-    ![alt text](<Screenshot (46).png>)
-    
+##  Output 
+  ![alt text](image-1.png)
 
   ##  Discussion and conclusion
 
