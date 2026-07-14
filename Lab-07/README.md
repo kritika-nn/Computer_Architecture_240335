@@ -3,6 +3,8 @@
 ## Objective
    . Design and simulate SR, D, JK, and T flip-flops
      in VHDL.
+
+     
    . Understand clock edge triggering in sequential 
      logic circuits.
 ## Theory
