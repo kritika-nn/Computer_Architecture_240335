@@ -1,28 +1,22 @@
-
 def add(A, M):
     carry = 0
-    Sum = ""
+    result = ""
 
     for i in range(len(A) - 1, -1, -1):
         temp = int(A[i]) + int(M[i]) + carry
-        Sum += str(temp % 2)
+        result = str(temp % 2) + result
         carry = 1 if temp > 1 else 0
 
-    return Sum[::-1]
+    return result
 
 
 def compliment(m):
-    # Flip bits
-    M = ''.join('1' if b == '0' else '0' for b in m)
-
-    # Add 1 to get 2's complement
+    flipped = ''.join('1' if b == '0' else '0' for b in m)
     one = '0' * (len(m) - 1) + '1'
-    return add(M, one)
+    return add(flipped, one)
 
 
 def nonRestoringDivision(dividend_dec, divisor_dec):
-    # Convert decimal to binary and determine bit length
-    # Add 1 extra bit for the sign bit
     bit_len = max(dividend_dec.bit_length(), divisor_dec.bit_length()) + 1
 
     Q = format(dividend_dec, f'0{bit_len}b')
@@ -37,9 +31,9 @@ def nonRestoringDivision(dividend_dec, divisor_dec):
     for i in range(1, bit_len + 1):
         print(f"\nStep {i}:", end=" ")
 
-        # Shift Left
+        # Left Shift
         combined = A + Q
-        combined = combined[1:]
+        combined = combined[1:] + "0"
 
         A = combined[:bit_len]
         Q_temp = combined[bit_len:]
@@ -52,18 +46,16 @@ def nonRestoringDivision(dividend_dec, divisor_dec):
             print("Shift Left & Add")
 
         if A[0] == '1':
-            # A is negative
-            Q = Q_temp + '0'
+            Q = Q_temp[:-1] + '0'
             flag = "unsuccessful"
         else:
-            # A is positive
-            Q = Q_temp + '1'
+            Q = Q_temp[:-1] + '1'
             flag = "successful"
 
         print(f"A: {A} | Q: {Q}")
 
     if A[0] == '1':
-        print("\nFinal Step: A is negative, performing correction (A = A + M)")
+        print("\nFinal Correction: A = A + M")
         A = add(A, M)
 
     print("-" * 30)
@@ -73,14 +65,13 @@ def nonRestoringDivision(dividend_dec, divisor_dec):
 
 if __name__ == "__main__":
     try:
-        num1 = int(input("Enter Dividend (Decimal): "))
-        num2 = int(input("Enter Divisor (Decimal): "))
+        dividend = int(input("Enter Dividend (Decimal): "))
+        divisor = int(input("Enter Divisor (Decimal): "))
 
-        if num2 == 0:
+        if divisor == 0:
             print("Division by zero is not allowed.")
         else:
-            nonRestoringDivision(num1, num2)
+            nonRestoringDivision(dividend, divisor)
 
     except ValueError:
         print("Please enter valid integers.")
-```

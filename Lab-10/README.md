@@ -56,3 +56,16 @@ A = A + M
 
 - **Quotient** is stored in **Q**.
 - **Remainder** is stored in **A**.
+
+## OutPut
+![alt text](image.png)
+
+## Discussion and Conclusion
+
+The Non-Restoring Division Algorithm was 
+successfully implemented in Python. The program 
+correctly calculated the quotient and remainder, and
+\ the results matched the expected output. Thus, the
+ objective of the experiment was successfully 
+ achieved.
+ 
